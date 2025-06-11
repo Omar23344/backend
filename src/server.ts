@@ -12,7 +12,7 @@ app.use(express.json());
 app.get('/api/estacionamientos', async (req: Request, res: Response) => {
   try {
     const result = await pool.query('SELECT * FROM estacionamientos');
-    res.json(result.rows);
+    res.json(result.rows); // <-- esto debe ser un array
   } catch (err) {
     res.status(500).json({ error: 'Error al consultar la base de datos' });
   }
