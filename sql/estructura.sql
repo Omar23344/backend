@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS estacionamientos (
+  id SERIAL PRIMARY KEY,
+  placa VARCHAR(20) NOT NULL,
+  horas INTEGER NOT NULL,
+  tarifa NUMERIC(10,2) NOT NULL
+);
