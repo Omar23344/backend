@@ -19,6 +19,7 @@ app.get('/api/estacionamientos', async (req: Request, res: Response) => {
 });
 
 // Agregar un nuevo registro
+// Agregar 
 app.post('/api/estacionamientos', async (req: Request, res: Response) => {
   const { placa, horas, tarifa } = req.body;
   try {
